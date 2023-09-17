@@ -1,5 +1,6 @@
-Feature: TUGAS ALTA QE BATCH 12
-@Tugas
+Feature: TUGAS ALTA QE BATCH 12 EKA
+#  Positive Case
+@Tugas @Latihan
   Scenario Outline: Delete a user with valid json and user id
     Given Delete a user with valid user id <id>
     When Send request delete user
@@ -7,8 +8,8 @@ Feature: TUGAS ALTA QE BATCH 12
       Examples:
         | id |
         | 1  |
-
-# negative case
+@Tugas
+# Negative case
   Scenario Outline: Delete a user with invalid parameter
     Given Delete a user with invalid user id <id>
     When Send request delete user

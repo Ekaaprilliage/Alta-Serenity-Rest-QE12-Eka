@@ -1,5 +1,5 @@
 Feature: TUGAS ALTA QE Batch 12 EKA
-# Positive
+# Positive Case
   @Tugas
   Scenario Outline: Get Single Resource user with valid parameter id
     Given Get Single Resource users with valid id <id>
@@ -12,6 +12,7 @@ Feature: TUGAS ALTA QE Batch 12 EKA
     | 1  |
     | 2  |
 
+  @Tugas
 # Negative Case
   Scenario Outline: Get Single Resource user with Invalid parameter id
     Given Get Single Resource users with invalid id <id>

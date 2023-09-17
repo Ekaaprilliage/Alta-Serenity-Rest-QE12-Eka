@@ -63,4 +63,9 @@ public class PostLoginSuccStepDef {
                 .body(JsonSchemaValidator.matchesJsonSchema(json));
 
     }
+
+    @And("Response body token error message was {string}")
+    public void responseBodyTokenErrorMessageWas(String eror) {
+        SerenityRest.and().body(ReqresResponses.ERROR_MESSAGE,equalTo(eror));
+    }
 }
